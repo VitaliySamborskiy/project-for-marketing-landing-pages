@@ -42,6 +42,7 @@ export default defineConfig({
 		alias: {
 			"@": resolve(__dirname, "./src"),
 			"@shared": resolve(__dirname, "./src/shared"),
+			"@landings": resolve(__dirname, "./src/landings"),
 		},
 	},
 
