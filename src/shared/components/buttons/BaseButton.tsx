@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { BaseButtonType } from "@shared/types/buttons-type.ts";
+import type { BaseButtonType } from "./buttons-type.ts";
 
 const BaseButton: React.FC<BaseButtonType> = ({
 	text,
