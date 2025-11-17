@@ -4,7 +4,7 @@ import type { IconProps } from "@shared/types/icon-props";
 const Star: React.FC<IconProps> = ({
 	size = 24,
 	stylesIcon = "",
-	strokeColor = "white",
+	strokeColor = "yellow",
 	fill = "none",
 }) => {
 	return (

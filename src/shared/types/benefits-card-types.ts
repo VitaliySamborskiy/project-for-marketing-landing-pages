@@ -6,7 +6,8 @@ type BenefitCardConfig = {
 	description?: string;
 };
 
-type BenefitCardComponents = {
+
+type BenefitCardComponents = Omit<BenefitCardConfig, "icon"> & {
 	stylesBody?: string;
 	stylesTitle?: string;
 	stylesDescription?: string;
