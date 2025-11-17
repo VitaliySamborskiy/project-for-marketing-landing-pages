@@ -9,11 +9,13 @@ const ReviewsCard: React.FC<ReviewsCardProps> = ({
 }) => {
 	return (
 		<article className={props.cardStyle}>
-			<div className={props.countIconStyles}>
+			<figure
+				className={props.countIconStyles}
+				aria-hidden="true">
 				{Array.from({ length: countIcons }).map((_, index) => (
 					<Icons key={index} />
 				))}
-			</div>
+			</figure>
 			<p className={props.descriptionStyle}>{props.description}</p>
 			<div className={props.profileContainerStyle}>
 				<img
