@@ -1,9 +1,42 @@
 import type { BenefitCardConfig } from "@shared/types/benefits-card-types";
+import avatar1 from "./assets/81040e3e-3741-430e-b6ba-4d2fe7c1c08c.jpeg";
+import avatar2 from "./assets/dc6aef82-071e-452f-9be1-58e86ba9e89e.jpeg";
+import avatar3 from "./assets/31025117-d2a2-4e32-8b1f-0b625939c641.jpeg";
 
-export const benefits: string = "Наші Переваги";
-export const benefitTitle: string = "Чому вибирають нас?";
-export const benefitsDescription: string =
-	"Ми пропонуємо комплексне рішення, яке поєднує інновацію, надійність та простоту використання для максимального результату вашого бізнесу.";
+export const text = {
+	hero: {
+		title: `Сучасне Рішення Для Вашого Бізнесу`,
+		description:
+			"Автоматизуйте процеси, збільшуйте прибуток та залучайте нових клієнтів з нашим інноваційним продуктом. Розпочніть вже сьогодні!",
+		buttons: {
+			primary: "Розпочати Безкоштовний Тест",
+			secondary: "Дізнатися більше",
+		},
+		features: ["Безкоштовний тест", "Без кредитної карти", "Скасування в будь-який час"],
+		imageSubTitle: "Швидкість",
+		imageSubDescription: "Обробка даних за мілісекунди",
+	},
+	benefits: {
+		subtitle: "Наші Переваги",
+		title: "Чому вибирають нас?",
+		description:
+			"Ми пропонуємо комплексне рішення, яке поєднує інновацію, надійність та простоту використання для максимального результату вашого бізнесу.",
+		footerDescription: "Готові розпочати трансформацію вашого бізнесу?",
+		button: "Почати безкоштовний тест",
+	},
+	reviews: {
+		subtitle: "Відгуки Клієнтів",
+		title: "Що кажуть наші клієнти?",
+		description: "Тисячі компаній вже довіряють нам своїм бізнесом. Ось що вони про нас думають.",
+	},
+	footer: {
+		title: "Маркетинговий Лендінг",
+		description: "Створюємо сучасні рішення для вашого бізнесу з фокусом на результат та якість.",
+		contacts: "Контакти",
+		social: "Соціальні мережі",
+	},
+};
+
 export const benefitsCards: BenefitCardConfig[] = [
 	{
 		icon: "lightning",
@@ -28,5 +61,42 @@ export const benefitsCards: BenefitCardConfig[] = [
 		description: "Ідеально працює на будь-якому пристрої – від мобільного до десктопа.",
 	},
 ];
-export const benefitFooterDescription: string = "Готові розпочати трансформацію вашого бізнесу?";
-export const benefitButton: string = "Почати безкоштовний тест";
+
+export const reviewsCards = [
+	{
+		avatar: avatar1,
+		description:
+			"Це рішення значно спростило наш робочий процес. Інтерфейс інтуїтивно зрозумілий, а підтримка клієнтів була на висоті!",
+		name: "Олена Кравчук",
+		position: "Менеджер Проектів, TechNova",
+	},
+	{
+		avatar: avatar2,
+		description:
+			"Продукт перевершив всі наші очікування. Ми побачили реальне зростання ефективності вже через місяць використання.",
+		name: "Андрій Мельник",
+		position: "CEO, Global Solutions",
+	},
+	{
+		avatar: avatar3,
+		description:
+			"Надзвичайно гнучкий інструмент, який дозволив нам швидко інтегруватися з існуючими системами без жодних проблем.",
+		name: "Ірина Петрова",
+		position: "CTO, DataStream",
+	},
+];
+
+export const reviewBusnes = [
+	{
+		title: "5000+",
+		description: "Задоволених клієнтів",
+	},
+	{
+		title: "98%",
+		description: "Рейтинг задоволеності",
+	},
+	{
+		title: "24/7",
+		description: "Підтримка клієнтів",
+	},
+];
